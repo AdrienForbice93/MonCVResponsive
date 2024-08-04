@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <!--========== BOX ICONS ==========-->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+
+        <!--========== CSS ==========-->
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <title>Responsive resume cv</title>
+    </head>
+    <body>
+        <!--========== HEADER ==========-->
+        <header class="I-header" id="header">
+            <nav class="nav bd-container">
+                <a href="#" class="nav__logo">Resume</a>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link"><i class='bx bx-home nav__icon'></i>Home</a></li>
+                        <li class="nav__item"><a href="#profile" class="nav__link"><i class='bx bx-user nav__icon' ></i>Profil</a></li>
+                        
+                        <li class="nav__item"><a href="#skills" class="nav__link"><i class='bx bx-briefcase-alt nav__icon' ></i>Skills</a></li>
+                        <li class="nav__item"><a href="#experience" class="nav__link"><i class='bx bx-receipt nav__icon' ></i>Expérience</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link"><i class='bx bx-book nav__icon' ></i>Études</a></li>
+                        <li class="nav__item"><a href="#education" class="nav__link"><i class='bx bx-award nav__icon' ></i>Diplômes</a></li>
+                    </ul>
+                </div>
+            <div class="nav_toggle" id="nav-toggle">
+                <i class='bx bx-grid-alt' ></i>
+            </div>
+            </nav>
+        </header>
+
+        <main class="l-main bd-container">
+            <!-- All elements within this div, is generated in PDF -->
+            <div class="resume" id="area-cv">
+                <div class="resume__left">
+                    <!--========== HOME ==========-->
+                    <section class="home" id="home">
+                        <div class="home__container section bd-grid">
+                            <div class="home__data bd-grid">
+                                <img src="assets/img/profil.jpeg" alt="Monprofil" class="home__img">
+                                <h1 class="home__title">Forbice <b>Adrien</b> <span class="home__title-color"></span></h1>
+                                <h3 class="home__profession">Développeur Web</h2>
+                                <!-- <p class="home__description">I am a web developer with a passion for web application development and a desire to help others. I am a self-motivated, hardworking, and goal-oriented individual who is always looking for new challenges. I am a quick learner and a team player who is always willing to go the extra mile to get the job done.</p>
+                                <div class="home__social">
+                                    <a href="#" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                                    <a href="#" class="home__social-icon"><i class='bx bxl-github'></i></a>
+                                    <a href="#" class="home__social-icon"><i class='bx bxl-dribbble'></i></a>
+                                </div> -->
+
+                                <div>
+                                    <a download="" href="https://drive.google.com/file/d/1_DiSCIKzJgk9td9BMaDuWzldfUenXUBP/view?usp=sharing" class="home__button-movil" >Télécharger</a>
+                                </div>
+            
+
+                        </div>
+                            <div class="home__adress bd-grid">
+                                <span class="home__information">
+                                    <i class='bx bx-map home__icon'></i>
+                                    Paris, France,
+                                    9 rue Joséphine Baker,
+                                    93000 Bobigny.
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-envelope home__icon'></i>
+                                    didead93@gmail.com
+                                </span>
+                                <span class="home__information">
+                                    <i class='bx bx-phone home__icon'></i>
+                                    06 62 64 20 41
+                                </span>
+                            </div>
+                    </div>
+
+                        <!-- Theme change button -->
+
+                        <!-- <div class="home__theme" id="theme-button"> -->
+                            <i class='bx bx-moon change-theme' title="Theme" id="theme-button"></i>
+
+                            <!-- Button to generate and download the pdf. Available for desktop. -->
+                            <i class='bx bx-download generate-pdf' title="Generate PDF" id="resume-button"></i>
+                        
+                    </section>          
+                    
+                    <!--========== SOCIAL ==========-->
+                    <section class="social section">
+                        <h2 class="section-title">Réseaux</h2>
+
+                        <div class="social__container bd-grid">
+                            <a href="https://www.linkedin.com/in/adrien-forbice-1a991a2b7/" target="_blank" class="social__link"> <i class='bx bxl-linkedin-square social__icon'></i>@AdrienForbice</a>
+                            <a href="https://github.com/AdrienForbice93" target="_blank" class="social__link"> <i class='bx bxl-github social__icon' ></i>@AdrienForbice93</a>
+                            <a href="https://www.instagram.com/didyforbis/" target="_blank" class="social__link"> <i class='bx bxl-instagram social__icon' ></i>@didyforbis</a>
+                        </div>
+                    </section> 
+
+                    <!--========== PROFILE ==========-->
+                    <section class="profile section" id="profile">
+                        <h2 class="section-title">Profil</h2>
+                        <p class="profile__description">Je suis une personne sérieuse et responsable dans mon travail. Récemment diplômé, je suis passionné par le développement et avide d'apprendre et de me perfectionner dans ce domaine. Mon objectif est de continuer à développer mes compétences techniques tout en apportant des solutions innovantes et efficaces.</p>
+                    </section>
+
+
+                    <!--========== SKILLS  ==========-->
+                    <section class="skills section" id="skills">
+                        <h2 class="section-title">Skills</h2>
+                        <div class="skills__content bd-grid">
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>HTML
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>CSS
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>PHP
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>JavaScript
+                                </li>
+                            </ul>
+
+                            <ul class="skills__data">
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>SQL
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>Symfony
+                                </li>
+                                <li class="skills__name">
+                                    <span class="skills__circle"></span>React
+                                </li>
+                            </ul>
+                        </div>
+                    </section>
+
+                </div>
+                            
+                <div class="resume__right">
+
+                    <!--========== EXPERIENCES ==========-->
+                    <section class="experience section" id="experience">
+                        <h2 class="section-title">Expériences Professionnelles</h2>
+                        <div class="experience__container bd-grid">
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Préparateur de Commandes / Magasinier</h3>
+                                    <span class="experience__company">Mai 2021 / Août 2023</span>
+                                    <p class="experience__description">ALR Coopération, Commerce de gros, CDI</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Préparateur de Commandes / Magasinier</h3>
+                                    <span class="experience__company">Octobre 2020 / Avril 2022</span>
+                                    <p class="experience__description">Yoko Design, Commerce de gros, CDI</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <span class="experience__line"></span>
+                                </div>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Employé Polyvalent / Préparateur, Serveur, Hôte de caisse</h3>
+                                    <span class="experience__company">Mai 2014 / Décembre 2018</span>
+                                    <p class="experience__description">Snac Karsenthy, Restauration, Commerce alimentaire, CDI</p>
+                                </div>
+                            </div>
+                            <div class="experience__content">
+                                <div class="experience__time">
+                                    <span class="experience__rounder"></span>
+                                    <!-- <span class="experience__line"></span> -->
+                                </div>
+                                <div class="experience__data bd-grid">
+                                    <h3 class="experience__title">Marchand de presse</h3>
+                                    <span class="experience__company">Mai 2014 / février 2014</span>
+                                    <p class="experience__description">Kiosque, Vente de presse</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    </section>
+
+                                        <!--========== EDUCATIONS AND CERTIFICATES ==========-->
+                                        <section class="education section" id="education">
+                                            <h2 class="section-title">Études et Diplômes</h2>
+                                            <div class="education__container bd-grid">
+                                                <div class="education__content">
+                                                    <div class="education__time">
+                                                        <span class="education__rounder"></span>
+                                                        <span class="education__line"></span>
+                                                    </div>
+                                                    <div class="education__data bd-grid">
+                                                        <h3 class="education__title">Développeur Web et Web Mobile</h3>
+                                                        <span class="education__studies">Titre professionnel de niveau II</span>
+                                                        <span class="education__years">2023 - 2024</span>
+                                                        <p class="education__description">Formation École O'Clock.
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="education__content">
+                                                    <div class="education__time">
+                                                        <span class="education__rounder"></span>
+                                                        <span class="education__line"></span>
+                                                    </div>
+                                                    <div class="education__data bd-grid">
+                                                        <h3 class="education__title">Cuisinier</h3>
+                                                        <span class="education__studies">BAC Professionnel ( Niveau )</span>
+                                                        <span class="education__years">2011 - 2012</span>
+                                                        <p class="education__description">Lycée François Rabelais
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                                <div class="education__content">
+                                                    <div class="education__time">
+                                                        <span class="education__rounder"></span>
+                                                        <!-- <span class="education__line"></span> -->
+                                                    </div>
+                                                    <div class="education__data bd-grid">
+                                                        <h3 class="education__title">Hôtellerie-Restauration</h3>
+                                                        <span class="education__studies">BEP</span>
+                                                        <span class="education__years">2009 - 2011</span>
+                                                        <p class="education__description">Lycée François Rabelais
+                                                        </p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </section>
+
+                    <!--========== LANGUAGES ==========-->
+                    <section class="languages section">
+                        <h2 class="section-title">Langues</h2>
+                        <div class="languages__container">
+                        <ul class="languages__content bd-grid">
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Français
+                                <span class="languages__number">Acquis</span>
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Anglais
+                                <span class="languages__number">Intermédiaire</span>
+                            </li>
+                            <li class="languages__name">
+                                <span class="languages__circle"></span>Espagnol
+                                <span class="languages__number">Débutant</span>
+                            </li>
+                        </ul>
+                    </div>
+                    </section>
+                    
+                    <!--========== INTERESTS ==========-->
+                    <section class="interests section">
+                        <h2 class="section-title">Hobbies</h2>
+                        <div class="interests__container bd-grid">
+                                <div class="interests__content">
+                                    <i class='bx bx-football interests__icon'></i>
+                                    <span class="interests__name">Football</span>
+                                </div>
+                                <div class="interests__content">
+                                    <i class='bx bx-game interests__icon' ></i>
+                                    <span class="interests__name">Jeux</span>
+                                </div>
+                                <div class="interests__content">
+                                    <i class='bx bx-dish interests__icon'></i>
+                                    <span class="interests__name">Cuisine</span>
+                                </div>
+                                <div class="interests__content">
+                                    <i class='bx bx-headphone interests__icon' ></i>
+                                    <span class="interests__name">Musique</span>
+                                </div>
+                        </div>
+                    </section>
+                </div>
+            </div>        
+        </main>
+
+        <!--========== SCROLL TOP ==========-->
+        <a href="#" class="scrolltop" id="scroll-top">
+            <i class='bx bx-up-arrow-alt scrolltop__icon'></i>
+
+        <!--========== HTML2PDF ==========-->
+        <script src="assets/js/html2pdf.bundle.min.js"></script>
+
+        <!--========== MAIN JS ==========-->
+        <script src="assets/js/main.js"></script>
+    </body>
+</html>
