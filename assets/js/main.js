@@ -108,7 +108,8 @@ var opt = {
   filename:     'AdrienForbiceCV.pdf',
   image:        { type: 'jpeg', quality: 0.98 },
   html2canvas:  { scale: 4 },
-  jsPDF:        { format: 'a4', orientation: 'portrait' }
+  jsPDF:        { format: 'a4', orientation: 'portrait' },
+  output:       'save'
 };
 
 // Function to call areaCv and Html2Pdf options 
@@ -128,7 +129,7 @@ resumeButton.addEventListener('click', () =>{
     
     // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
 
-    setTimeout(removeScale, 5000)
+    // setTimeout(removeScale, 5000)
  
 })
 

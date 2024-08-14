@@ -76,7 +76,7 @@ body.dark-theme {
 
 body.scale-cv {
   --h1-font-size: .938rem;
-  --h2-font-size: .938rem;
+  --h2-font-size: 1.100rem;
   --h3-font-size: .875rem;
   --normal-font-size: .813rem;
   --small-font-size: .75rem;
@@ -111,7 +111,7 @@ body.scale-cv {
 }
 
 .scale-cv .section{
-  padding: 1.5rem 0 .80rem;
+  padding: 0.5rem 0 .80rem;
 }
 
 .scale-cv .section-title {
@@ -125,7 +125,7 @@ body.scale-cv {
 }
 
 .scale-cv .resume__right{
-  padding: 0;
+  padding: 35px;
 }
 
 .scale-cv .home__img {
@@ -187,7 +187,7 @@ body.scale-cv {
 }
 
 .scale-cv .interests__container {
-  gap: 3.5rem;
+  gap: 1.9rem;
 }
 
 body {
@@ -618,12 +618,12 @@ img {
   }
 
   .languages__content {
-    grid-template-columns: repeat(2, max-content);
+    grid-template-columns: repeat(1, max-content);
     column-gap: 3.5rem;
   }
 
   .interests__container {
-    grid-template-columns: repeat(4, max-content);
+    grid-template-columns: repeat(2, max-content);
     column-gap: 3.5rem;
   }
 
