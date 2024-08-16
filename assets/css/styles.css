@@ -556,6 +556,9 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
+.resume {
+  margin-bottom: 50px;
+}
 
 /*========== MEDIA QUERIES ==========*/
 /* For small devices, menu two columns */
