@@ -81,6 +81,13 @@ themeButton.addEventListener('click', () => {
     // We save the theme and the current icon that the user chose
     localStorage.setItem('selected-theme', getCurrentTheme())
     localStorage.setItem('selected-icon', getCurrentIcon())
+
+    // Vérifier si le thème sombre est activé pour changer le lien de téléchargement
+    if (document.body.classList.contains(darkTheme)) {
+        downloadLink.href = 'assets/pdf/AdrienForbiceCV noir.pdf'; // Lien pour le CV noir
+    } else {
+        downloadLink.href = 'assets/pdf/AdrienForbiceCV blanc.pdf'; // Lien par défaut pour le CV blanc
+    }
 })
 
 /*==================== REDUCE THE SIZE AND PRINT ON AN A4 SHEET ====================*/ 
