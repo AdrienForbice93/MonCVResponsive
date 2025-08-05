@@ -142,10 +142,58 @@ resumeButton.addEventListener("click", () => {
   scaleCv();
 
   // 2. The PDF is generated
+
   generateResume();
 
   // 3. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
+
   setTimeout(removeScale, 5000);
+});
+
+/*==================== DOWNLOAD LINK PDF GENERATION ====================*/
+// Faire fonctionner le lien "Télécharger" comme le bouton Generate PDF
+let downloadLink = document.getElementById("downloadLink");
+
+// Fonction pour détecter si on est sur mobile
+function isMobileDevice() {
+  return (
+    /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(
+      navigator.userAgent
+    ) || window.innerWidth <= 768
+  );
+}
+
+// Fonction pour forcer la disposition desktop sur mobile pour le PDF
+function forceDesktopLayout() {
+  if (isMobileDevice()) {
+    document.body.classList.add("force-desktop-pdf");
+  }
+}
+
+// Fonction pour restaurer la disposition mobile
+function restoreMobileLayout() {
+  if (isMobileDevice()) {
+    document.body.classList.remove("force-desktop-pdf");
+  }
+}
+
+downloadLink.addEventListener("click", (e) => {
+  e.preventDefault(); // Empêcher le téléchargement du fichier statique
+
+  // 1. Forcer la disposition desktop sur mobile
+  forceDesktopLayout();
+
+  // 2. The class .scale-cv is added to the body, where it reduces the size of the elements
+  scaleCv();
+
+  // 3. The PDF is generated
+  generateResume();
+
+  // 4. The .scale-cv class is removed from the body after 5 seconds to return to normal size.
+  setTimeout(() => {
+    removeScale();
+    restoreMobileLayout(); // Restaurer la disposition mobile après génération
+  }, 5000);
 });
 
 /*==================== TOGGLE PROFILE / SOFT SKILLS ====================*/

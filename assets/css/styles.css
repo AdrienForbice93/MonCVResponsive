@@ -104,7 +104,8 @@ body.scale-cv {
 .scale-cv .change-theme,
 .scale-cv .generate-pdf,
 .scale-cv .toggle-profile,
-.scale-cv .toggle-skills {
+.scale-cv .toggle-skills,
+.scale-cv #downloadLink {
   display: none;
 }
 
@@ -190,6 +191,30 @@ body.scale-cv {
 
 .scale-cv .skills__name {
   margin-bottom: var(--mb-1)
+}
+
+.scale-cv .competences__content {
+  grid-template-columns: repeat(2, 1fr);
+  gap: 0.3rem;
+  column-gap: 0.5rem;
+}
+
+.scale-cv .competences__name {
+  margin-bottom: 0.4rem;
+  font-size: var(--small-font-size);
+}
+
+.scale-cv .soft-skills__content {
+  gap: 0.6rem;
+}
+
+.scale-cv .soft-skills__name {
+  margin-bottom: 0.5rem;
+  font-size: var(--small-font-size);
+}
+
+.scale-cv .soft-skills__container {
+  margin-top: 0.5rem;
 }
 
 .scale-cv .interests__container {
@@ -699,4 +724,255 @@ img {
     column-gap: 3.5rem;
   }
 
+}
+
+/*========== FORCE DESKTOP LAYOUT FOR PDF ON MOBILE ==========*/
+.force-desktop-pdf {
+  margin: 3rem 0;
+}
+
+.force-desktop-pdf .bd-container {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.force-desktop-pdf .I-header,
+.force-desktop-pdf .scrolltop {
+  display: none !important;
+}
+
+.force-desktop-pdf .resume {
+  display: grid !important;
+  margin-bottom: 0px;
+  grid-template-columns: .5fr 1fr !important;
+  background-color: var(--container-color);
+  box-shadow: 0 0 8px rgba(13, 12, 12, .15);
+  gap: 2rem !important;
+}
+
+.force-desktop-pdf .resume__left {
+  background-color: var(--container-color-alt);
+  padding: 0 1.5rem !important;
+}
+
+.force-desktop-pdf .resume__right {
+  padding: 2em !important;
+}
+
+.force-desktop-pdf .generate-pdf {
+  display: inline-block !important;
+}
+
+.force-desktop-pdf .section-title {
+  text-align: initial !important;
+}
+
+.force-desktop-pdf .home__container {
+  gap: 1rem !important;
+}
+
+.force-desktop-pdf .nav__menu {
+  position: static !important;
+  background-color: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  width: auto !important;
+  padding: 0 !important;
+}
+
+.force-desktop-pdf .nav__list {
+  display: flex !important;
+  grid-template-columns: none !important;
+  gap: 2rem !important;
+}
+
+.force-desktop-pdf .nav__link {
+  flex-direction: row !important;
+}
+
+/*========== OPTIMISATION PDF MOBILE - MÊMES RÈGLES QUE SCALE-CV ==========*/
+.force-desktop-pdf .change-theme,
+.force-desktop-pdf .generate-pdf,
+.force-desktop-pdf .toggle-profile,
+.force-desktop-pdf .toggle-skills,
+.force-desktop-pdf #downloadLink {
+  display: none !important;
+}
+
+.force-desktop-pdf .bd-container {
+  max-width: 595px !important;
+}
+
+.force-desktop-pdf .competences__content {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 0.3rem !important;
+  column-gap: 0.5rem !important;
+}
+
+.force-desktop-pdf .competences__name {
+  margin-bottom: 0.4rem !important;
+  font-size: var(--small-font-size) !important;
+}
+
+.force-desktop-pdf .soft-skills__content {
+  gap: 0.6rem !important;
+}
+
+.force-desktop-pdf .soft-skills__name {
+  margin-bottom: 0.5rem !important;
+  font-size: var(--small-font-size) !important;
+}
+
+.force-desktop-pdf .soft-skills__container {
+  margin-top: 0.5rem !important;
+}
+
+.force-desktop-pdf .section {
+  padding: 0.5rem 0 .96rem !important;
+}
+
+.force-desktop-pdf .section-title {
+  font-size: var(--h2-font-size) !important;
+  margin-bottom: .75rem !important;
+}
+
+.force-desktop-pdf .resume__right .section-title {
+  margin-bottom: 1.8rem !important;
+}
+
+.force-desktop-pdf .home__container {
+  gap: 1.5rem !important;
+}
+
+.force-desktop-pdf .home__data {
+  gap: .25rem !important;
+}
+
+.force-desktop-pdf .home__adress,
+.force-desktop-pdf .social__container {
+  gap: .75rem !important;
+}
+
+.force-desktop-pdf .education__container,
+.force-desktop-pdf .experience__container {
+  gap: 1rem !important;
+  padding-right: 1rem !important;
+}
+
+.force-desktop-pdf .education__data,
+.force-desktop-pdf .experience__data {
+  gap: .38rem !important;
+}
+
+.force-desktop-pdf .skills__name {
+  margin-bottom: var(--mb-1) !important;
+}
+
+.force-desktop-pdf .interests__container {
+  gap: 1rem !important;
+}
+
+/*========== OPTIMISATION EXTRÊME POUR TOUTES LES COMBINAISONS TOGGLE ==========*/
+.force-desktop-pdf .resume__left,
+.force-desktop-pdf .resume__right {
+  padding: 0 3rem !important;
+}
+
+.force-desktop-pdf .resume__right {
+  padding: 1.5rem !important;
+}
+
+.force-desktop-pdf .home__img {
+  width: 100px !important;
+  height: 100px !important;
+}
+
+.force-desktop-pdf .education__time,
+.force-desktop-pdf .experience__time {
+  padding-right: .5rem !important;
+}
+
+.force-desktop-pdf .education__rounder,
+.force-desktop-pdf .experience__rounder {
+  width: 11px !important;
+  height: 11px !important;
+  margin-top: .22rem !important;
+}
+
+.force-desktop-pdf .education__line,
+.force-desktop-pdf .experience__line {
+  width: 1px !important;
+  height: 100% !important;
+  transform: translate(5px, 0) !important;
+}
+
+.force-desktop-pdf .home__icon,
+.force-desktop-pdf .social__icon,
+.force-desktop-pdf .interests__icon {
+  font-size: 1rem !important;
+}
+
+.force-desktop-pdf .interests__container {
+  margin-top: 0.5rem !important;
+  padding-bottom: 1rem !important;
+}
+
+.force-desktop-pdf .languages__content,
+.force-desktop-pdf .soft-skills__content {
+  grid-template-columns: repeat(1, max-content) !important;
+  column-gap: 3.5rem !important;
+}
+
+/*========== OPTIMISATION SPÉCIALE POUR COMPÉTENCES EN PDF MOBILE ==========*/
+.force-desktop-pdf .competences__content {
+  grid-template-columns: repeat(2, 1fr) !important;
+  gap: 0.2rem !important;
+  column-gap: 0.9rem !important;
+}
+
+.force-desktop-pdf .competences__name {
+  margin-bottom: 0.3rem !important;
+  font-size: var(--small-font-size) !important;
+  word-wrap: break-word !important;
+  overflow-wrap: break-word !important;
+}
+
+.force-desktop-pdf .competences.section {
+  padding: 0.6rem 0 0.9rem !important;
+}
+
+.force-desktop-pdf .competences__container {
+  margin-top: 0.6rem !important;
+}
+
+/*========== OPTIMISATION SPÉCIALE POUR SOFT SKILLS EN PDF MOBILE ==========*/
+.force-desktop-pdf .soft-skills__content {
+  gap: 0.5rem !important;
+  grid-template-columns: repeat(1, max-content) !important;
+  column-gap: 3rem !important;
+}
+
+.force-desktop-pdf .soft-skills__name {
+  margin-bottom: 0.4rem !important;
+  font-size: var(--small-font-size) !important;
+}
+
+.force-desktop-pdf .soft-skills__container {
+  margin-top: 0.4rem !important;
+}
+
+.force-desktop-pdf .soft-skills.section {
+  padding: 0.4rem 0 0.8rem !important;
+}
+
+.force-desktop-pdf .resume__right {
+  padding: 1.4rem !important;
+}
+
+.force-desktop-pdf .section-title {
+  margin-bottom: 0.6rem !important;
+}
+
+.force-desktop-pdf .resume__right .section-title {
+  margin-bottom: 1.4rem !important;
 }
