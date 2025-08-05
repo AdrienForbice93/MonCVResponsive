@@ -102,16 +102,18 @@ body.scale-cv {
 /*========== Classes modified to reduce size and print on A4 sheet ==========*/
 
 .scale-cv .change-theme,
-.scale-cv .generate-pdf {
+.scale-cv .generate-pdf,
+.scale-cv .toggle-profile,
+.scale-cv .toggle-skills {
   display: none;
 }
 
 .scale-cv .bd-container {
   max-width: 595px;
-  
+
 }
 
-.scale-cv .section{
+.scale-cv .section {
   padding: 0.5rem 0 .96rem;
 }
 
@@ -125,9 +127,10 @@ body.scale-cv {
   padding: 0 1rem;
 }
 
-.scale-cv .resume__right{
+.scale-cv .resume__right {
   padding: 30px;
 }
+
 .scale-cv .resume__right .section-title {
   margin-bottom: 1.8rem;
 }
@@ -135,7 +138,7 @@ body.scale-cv {
 .scale-cv .home__img {
   width: 100px;
   height: 100px;
-} 
+}
 
 .scale-cv .home__container {
   gap: 1.5rem;
@@ -146,18 +149,17 @@ body.scale-cv {
 }
 
 .scale-cv .home__adress,
- .scale-cv .social__container{
+.scale-cv .social__container {
   gap: .75rem;
 }
 
 .scale-cv .home__icon,
-.scale-cv .social__icon
-.scale-cv .interests__icon {
+.scale-cv .social__icon .scale-cv .interests__icon {
   font-size: 1rem;
 }
 
 .scale-cv .education__container,
-.scale-cv .experience__container{
+.scale-cv .experience__container {
   gap: 1rem;
   padding-right: 1rem;
 }
@@ -186,7 +188,7 @@ body.scale-cv {
   gap: .38rem;
 }
 
-.scale-cv .skills__name{
+.scale-cv .skills__name {
   margin-bottom: var(--mb-1)
 }
 
@@ -487,20 +489,23 @@ img {
 /*========== SKILLS AND LANGUAGES ==========*/
 
 .skills__content,
-.languages__content {
+.languages__content,
+.competences__content {
   grid-template-columns: repeat(2, 1fr);
   gap: 0;
 }
 
 .skills__name,
-.languages__name {
+.languages__name,
+.competences__name {
   display: flex;
   align-items: center;
   margin-bottom: var(--mb-3);
 }
 
 .skills__circle,
-.languages__circle {
+.languages__circle,
+.competences__circle {
   display: inline-block;
   width: 5px;
   height: 5px;
@@ -513,6 +518,51 @@ img {
   font-size: var(--small-font-size);
   color: var(--text-color-light);
   margin-left: 0.5rem;
+}
+
+/*========== SOFT SKILLS ==========*/
+.soft-skills__content {
+  grid-template-columns: 1fr;
+  gap: 0;
+}
+
+.soft-skills__name {
+  display: flex;
+  align-items: center;
+  margin-bottom: var(--mb-2);
+}
+
+.soft-skills__circle {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: var(--text-color);
+  border-radius: 50%;
+  margin-right: .75rem;
+}
+
+/*========== TOGGLE PROFILE BUTTON ==========*/
+.toggle-profile {
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.toggle-profile:hover {
+  color: var(--title-color);
+}
+
+/*========== TOGGLE SKILLS BUTTON ==========*/
+.toggle-skills {
+  font-size: 1rem;
+  color: var(--text-color);
+  cursor: pointer;
+  margin-left: 0.5rem;
+}
+
+.toggle-skills:hover {
+  color: var(--title-color);
 }
 
 
@@ -560,6 +610,7 @@ img {
   visibility: visible;
   bottom: 5rem;
 }
+
 .resume {
   margin-bottom: 50px;
 }
@@ -606,7 +657,7 @@ img {
   .resume__left {
     padding: 0 1.5rem;
   }
-  
+
   .resume__right {
     padding: 2em;
   }
@@ -630,6 +681,16 @@ img {
 
   .languages__content {
     grid-template-columns: repeat(1, max-content);
+    column-gap: 3.5rem;
+  }
+
+  .soft-skills__content {
+    grid-template-columns: repeat(1, max-content);
+    column-gap: 3.5rem;
+  }
+
+  .competences__content {
+    grid-template-columns: repeat(2, max-content);
     column-gap: 3.5rem;
   }
 
