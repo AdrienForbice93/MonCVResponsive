@@ -34,6 +34,15 @@
   /*========== z index ==========*/
   --z-tooltip: 10;
   --z-fixed: 100;
+/* Colonne gauche plus sombre en mode clair */
+body:not(.dark-theme) .resume__left {
+  background-color: #e0e0e0;
+}
+}
+@media (max-width: 600px) {
+  body:not(.dark-theme) .resume__left {
+    background-color: var(--container-color-alt) !important;
+  }
 }
 
 /*========== BASE ==========*/
